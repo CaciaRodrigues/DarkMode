@@ -1,0 +1,57 @@
+:root {
+    /*Cores*/
+    --cor-mais-escura: #23222b;
+    --cor-escura: #33313f;
+    --cor-media: #4F4557;
+    --cor-clara: #6D5D6E;
+    --cor-branca: #F4EEE0;
+    /*Fonte*/
+    --fonte-corpo: 'Roboto', sans-serif;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--cor-branca);
+    color: var(--cor-escura);
+    font-family: var(--fonte-corpo);
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: 2s;
+}
+
+.caixa{
+    width: 40vw;
+    height: 55vh;
+    background-color: var(--cor-clara);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 8px 8px 12px var(--cor-media), -8px -8px 12px var(--cor-media);
+}
+
+.btn {
+    display: none;
+}
+
+.tema {
+    cursor: pointer;
+}
+
+.fa-cat {
+    font-size: 4rem;
+}
+
+.darkmode {
+    background-color: var(--cor-escura);
+    color: var(--cor-branca);
+    .caixa {
+        background-color: var(--cor-media);
+        box-shadow: 8px 8px 12px var(--cor-mais-escura), -8px -8px 12px var(--cor-mais-escura);
+    }
+}
