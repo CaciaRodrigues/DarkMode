@@ -24,8 +24,8 @@ body{
 }
 
 .caixa{
-    width: 40vw;
-    height: 55vh;
+    width: 40%;
+    height: 55%;
     background-color: var(--cor-clara);
     display: flex;
     justify-content: center;
@@ -53,5 +53,21 @@ body{
     .caixa {
         background-color: var(--cor-media);
         box-shadow: 8px 8px 12px var(--cor-mais-escura), -8px -8px 12px var(--cor-mais-escura);
+    }
+}
+
+@media screen and (max-width: 390px) {
+    body{
+    align-items: flex-start;
+    padding-top: 10%;
+    overflow-x: hidden;
+    }
+    
+    .caixa {
+        width: 70vw;
+        padding: 1rem;
+        text-align: center;
+        margin: auto;
+        gap: 10px;
     }
 }
